@@ -1,5 +1,8 @@
 # Git Basics Cheat Sheet
 
+This **Git Basics Cheat Sheet** provides a quick reference to the most commonly used Git commands. Whether you're initializing a new repository, managing branches, or pushing changes to a remote repository, this guide covers the essential Git commands to help streamline your workflow. It's designed for developers at any level to quickly get up to speed with Git's core functionality. Copy and use this cheat sheet as an easy reference to navigate your version control tasks efficiently.
+
+
 ## 1. Initialize a New Git Repository
 ```bash
 git init
