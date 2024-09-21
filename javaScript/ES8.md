@@ -93,6 +93,8 @@ In this example, `getData()` is an async function that waits for the `fetchData(
 
 ES8 introduced several helpful features like `Object.values()`, `Object.entries()`, string padding with `padStart()` and `padEnd()`, and async functions. These features make JavaScript more versatile, improve readability, and streamline working with objects and asynchronous operations.
 
+
+### License and Usage Terms
 © 2024 Andrew Bamford. This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 You are free to: share, copy, redistribute the material in any medium or format, adapt, remix, transform, and build upon the material for any purpose, even commercially, under the following terms: Attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made.

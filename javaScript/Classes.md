@@ -55,3 +55,10 @@ Employee Name: Alice, Role: Software Developer, Salary: $85000
 ```
 
 The `showInfo` method prints the employee's details by accessing the object’s properties using the `this` keyword. Classes in JavaScript provide a structured way to create objects that share common properties and methods. By using constructors and defining methods within classes, you can create modular, reusable, and maintainable code. In this example, we used an `Employee` class to demonstrate the creation of objects and how to define and call methods. This approach makes it easy to work with multiple objects of the same type, ensuring your code is organized and easy to manage.
+
+
+### License and Usage Terms
+
+© 2024 Andrew Bamford. This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to: share, copy, redistribute the material in any medium or format, adapt, remix, transform, and build upon the material for any purpose, even commercially, under the following terms: Attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made.

@@ -131,3 +131,10 @@ dev1.code();
 By utilizing classes, inheritance, and the `super` keyword in JavaScript, we can create a robust Employee Management System. Instantiation allows us to create individual employee objects, while inheritance enables us to extend functionality and create specialized employee types.
 
 Understanding these concepts is crucial for building scalable and maintainable applications in JavaScript.
+
+
+### License and Usage Terms
+
+© 2024 Andrew Bamford. This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to: share, copy, redistribute the material in any medium or format, adapt, remix, transform, and build upon the material for any purpose, even commercially, under the following terms: Attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made.

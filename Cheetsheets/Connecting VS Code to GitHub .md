@@ -110,3 +110,10 @@ git commit -m "Resolved merge conflicts"
 ```
 
 This cheat sheet helps you connect your local VS Code environment to GitHub, keep your repositories synchronized, and manage your code seamlessly between your laptop and GitHub. Keep this reference handy for your GitHub workflows!
+
+
+### License and Usage Terms
+
+© 2024 Andrew Bamford. This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to: share, copy, redistribute the material in any medium or format, adapt, remix, transform, and build upon the material for any purpose, even commercially, under the following terms: Attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made.
