@@ -1,0 +1,115 @@
+# Setting Up SSH with GitHub
+
+This guide provides step-by-step instructions on how to create an SSH key, add it to GitHub, and push your code using SSH.
+
+## Step 1: Generate an SSH Key
+First, you need to generate a new SSH key. Run the following command in your terminal:
+
+```bash
+ssh-keygen -t ed25519 -C "your_github_email@example.com"
+```
+
+If your system doesn’t support ed25519, use RSA instead:
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_github_email@example.com"
+```
+
+Replace `"your_github_email@example.com"` with the email address associated with your GitHub account.  
+Press Enter to accept the default file location.  
+If prompted, enter a passphrase or leave it blank.
+
+---
+
+## Step 2: Start the SSH Agent and Add Your Key
+To start the SSH agent in the background, run:
+
+```bash
+eval "$(ssh-agent -s)"
+```
+
+Next, add your new SSH key to the SSH agent:
+
+For **ed25519**:
+
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+
+For **RSA**:
+
+```bash
+ssh-add ~/.ssh/id_rsa
+```
+
+---
+
+## Step 3: Copy the SSH Key to Your Clipboard
+Now, copy your SSH public key to the clipboard.
+
+For **ed25519**:
+
+```bash
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
+For **RSA**:
+
+```bash
+pbcopy < ~/.ssh/id_rsa.pub
+```
+
+If `pbcopy` isn’t available, you can manually copy the output using:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+---
+
+## Step 4: Add the SSH Key to GitHub
+1. Go to your [GitHub SSH settings](https://github.com/settings/keys).
+2. Click **New SSH Key**.
+3. In the "Title" field, name your key (e.g., "My SSH Key").
+4. Paste the SSH key into the "Key" field.
+5. Click **Add SSH Key**.
+
+---
+
+## Step 5: Test the SSH Connection
+To make sure everything is set up correctly, test your SSH connection by running:
+
+```bash
+ssh -T git@github.com
+```
+
+You should see a message like:
+
+```text
+Hi yourusername! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+---
+
+## Step 6: Update the Remote URL to SSH
+Navigate to your project directory and update the remote URL to use SSH instead of HTTPS:
+
+```bash
+git remote set-url origin git@github.com:yourusername/yourrepository.git
+```
+
+Replace `yourusername` and `yourrepository` with your GitHub username and the repository name.
+
+---
+
+## Step 7: Push Your Changes
+Now, you can push your changes using SSH:
+
+```bash
+git push -u origin main
+```
+
+---
+
+## Troubleshooting
+If you encounter any errors or issues, ensure the SSH key is added to GitHub correctly and that the remote URL has been updated.
